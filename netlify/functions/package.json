@@ -1,7 +1,0 @@
-{
-  "name": "netlify-functions",
-  "private": true,
-  "dependencies": {
-    "googleapis": "^128.0.0"
-  }
-}
