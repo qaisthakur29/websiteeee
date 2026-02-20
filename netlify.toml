@@ -3,5 +3,7 @@
 [build]
   publish = "frontend"
   functions = "netlify/functions"
+[build.environment]
+  SECRETS_SCAN_OMIT_KEYS = "SHEET_NAME,SPREADSHEET_ID"
 [[plugins]]
 package = "@netlify/plugin-functions-install-core"
