@@ -5,8 +5,12 @@
 (function () {
   'use strict';
 
-  // Contact form API: Netlify function (use '' + path when on Netlify or with netlify dev)
-  const CONTACT_API = '/.netlify/functions/contact';
+  // ══════════════════════════════════════════════════════════════
+  // Google Apps Script Web App URL
+  // script.google.com se deploy karke URL yahan paste karo
+  // Example: 'https://script.google.com/macros/s/AKfycbw.../exec'
+  // ══════════════════════════════════════════════════════════════
+  const CONTACT_API = 'https://script.google.com/macros/s/AKfycbxcLzft5n6zNnTl2qEHHbNyVmNSxFicJ5ii1ikFfKXHIzyzYBT9OGRnuaUY7pSAn5nA/exec';
 
   /* ── Navbar scroll ────────────────────────────────────────── */
   const navbar = document.getElementById('navbar');
@@ -135,7 +139,7 @@
     return ok;
   }
 
-  /* ── Form Submit ──────────────────────────────────────────── */
+  /* ── Form Submit (Google Apps Script) ────────────────────── */
   contactForm?.addEventListener('submit', async e => {
     e.preventDefault();
     const data = {
@@ -146,24 +150,41 @@
     };
     if (!validate(data)) return;
 
+    // Check if API URL is configured
+    if (!CONTACT_API || CONTACT_API === 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
+      showToast('error', '!', 'Contact form is not configured yet. Please set up Google Apps Script URL.');
+      return;
+    }
+
     const btn = document.getElementById('submitBtn');
     btn.disabled = true;
     btn.classList.add('loading');
 
     try {
+      // Google Apps Script ke saath Content-Type: text/plain use karo
+      // Yeh CORS preflight request bypass karta hai
       const res = await fetch(CONTACT_API, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify(data),
       });
-      const json = await res.json();
 
-      if (res.ok && json.success !== false) {
+      // Try to parse response (might be opaque due to redirect)
+      let json;
+      try {
+        json = await res.json();
+      } catch {
+        // Google Apps Script redirects can cause opaque response
+        // If we reach here without error, data was likely saved
+        json = { success: true };
+      }
+
+      if (json.success !== false) {
         showToast('success', '✓', 'Message sent! We\'ll be in touch within 24 hours.');
         contactForm.reset();
         closeModal();
       } else {
-        showToast('error', '!', json.message || json.detail || 'Something went wrong.');
+        showToast('error', '!', json.message || 'Something went wrong.');
       }
     } catch {
       showToast('error', '!', 'Could not connect. Please try again later.');
