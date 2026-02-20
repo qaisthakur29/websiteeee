@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruqfa Marketing — Strategic Short-Form Content for Podcasters</title>
+  <meta name="description"
+    content="Ruqfa Marketing transforms long-form podcast episodes into minimal, engaging, high-retention short-form videos designed to increase reach, authority, and social presence." />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23065f46'/><text y='72' x='18' font-size='64' fill='white'>▶</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+       Logo · Nav links (center) · "Book a Strategy Call" (right only)
+  ══════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo">
+        <img src="images/logo.png" alt="Ruqfa Marketing"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <span class="nav-logo-fallback" style="display:none;">
+          <span class="nav-logo-icon">▶</span>
+          Ruqfa
+        </span>
+      </a>
+
+      <!-- Nav links — center (NO extra CTA inside here) -->
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+
+      <!-- Single CTA — far right -->
+      <a href="#" class="nav-cta" data-open-modal>Book a Strategy Call</a>
+
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title reveal">
+        Helping Podcasters Worldwide Grow Through Strategic Short-Form Content
+      </h1>
+      <p class="hero-sub reveal delay-1">
+        Ruqfa Marketing transforms long-form podcast episodes into minimal, engaging,
+        high-retention short-form videos designed to increase reach, authority, and social presence.
+      </p>
+      <div class="hero-actions reveal delay-2">
+        <a href="#work" class="btn btn-outline">View Our Work</a>
+        <a href="#" class="btn btn-green" data-open-modal>Book a Strategy Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SELECTED WORK  (stock images, no emojis)
+  ══════════════════════════════════════════ -->
+  <section id="work">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal">Selected Work</h2>
+        <p class="section-sub reveal delay-1">
+          Short-form content we've created for podcasters across every niche.
+        </p>
+
+        <div class="filter-tabs reveal delay-2">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="shorts">YouTube Shorts</button>
+          <button class="filter-tab" data-filter="reels">Instagram Reels</button>
+          <button class="filter-tab" data-filter="tiktok">TikTok</button>
+        </div>
+      </div>
+
+      <div class="work-grid" id="workGrid">
+
+        <!-- 1: Business Podcast — YouTube Shorts -->
+        <div class="work-card reveal" data-category="shorts">
+          <div class="work-card-thumb">
+            <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=640&q=80"
+              alt="Business Podcast - microphone recording" loading="lazy" />
+            <span class="work-card-platform">YouTube Shorts</span>
+          </div>
+          <div class="work-card-body">
+            <div class="work-card-title">The Business Podcast</div>
+            <p class="work-card-desc">High-retention shorts from 2-hour episodes, distilled into 60-second value-packed
+              clips.</p>
+          </div>
+        </div>
+
+        <!-- 2: Tech Talk Daily — Instagram Reels -->
+        <div class="work-card reveal delay-1" data-category="reels">
+          <div class="work-card-thumb">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&q=80"
+              alt="Tech Talk Daily - technology circuit board" loading="lazy" />
+            <span class="work-card-platform">Instagram Reels</span>
+          </div>
+          <div class="work-card-body">
+            <div class="work-card-title">Tech Talk Daily</div>
+            <p class="work-card-desc">Engaging tech content for social growth, formatted for maximum algorithm reach.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3: Mindful Conversations — TikTok -->
+        <div class="work-card reveal delay-2" data-category="tiktok">
+          <div class="work-card-thumb">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=640&q=80"
+              alt="Mindful Conversations - person meditating" loading="lazy" />
+            <span class="work-card-platform">TikTok</span>
+          </div>
+          <div class="work-card-body">
+            <div class="work-card-title">Mindful Conversations</div>
+            <p class="work-card-desc">Viral-ready clips with strategic hooks designed to stop the scroll instantly.</p>
+          </div>
+        </div>
+
+        <!-- 4: Entrepreneur Stories — YouTube Shorts -->
+        <div class="work-card reveal delay-1" data-category="shorts">
+          <div class="work-card-thumb">
+            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=640&q=80"
+              alt="Entrepreneur Stories - team meeting around table" loading="lazy" />
+            <span class="work-card-platform">YouTube Shorts</span>
+          </div>
+          <div class="work-card-body">
+            <div class="work-card-title">Entrepreneur Stories</div>
+            <p class="work-card-desc">Motivational content with high engagement, distilled from long founder interviews.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5: Finance Focus — Instagram Reels -->
+        <div class="work-card reveal delay-2" data-category="reels">
+          <div class="work-card-thumb">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=640&q=80"
+              alt="Finance Focus - stock chart on screen" loading="lazy" />
+            <span class="work-card-platform">Instagram Reels</span>
+          </div>
+          <div class="work-card-body">
+            <div class="work-card-title">Finance Focus</div>
+            <p class="work-card-desc">Educational finance content optimized for reach and audience retention.</p>
+          </div>
+        </div>
+
+        <!-- 6: Creative Minds — TikTok -->
+        <div class="work-card reveal delay-3" data-category="tiktok">
+          <div class="work-card-thumb">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=640&q=80"
+              alt="Creative Minds - designer working on tablet" loading="lazy" />
+            <span class="work-card-platform">TikTok</span>
+          </div>
+          <div class="work-card-body">
+            <div class="work-card-title">Creative Minds</div>
+            <p class="work-card-desc">Art and design content with motion graphics that captivate creative audiences.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       WHAT WE DO — green left-bar style, exactly like reference
+  ══════════════════════════════════════════ -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal">What We Do</h2>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-item reveal">
+          <div class="service-item-content">
+            <div class="service-title">Podcast to Short-Form Repurposing</div>
+            <p class="service-desc">We identify the most engaging moments from your long-form content and transform them
+              into platform-ready short videos that drive engagement and audience growth.</p>
+          </div>
+        </div>
+
+        <div class="service-item reveal delay-1">
+          <div class="service-item-content">
+            <div class="service-title">High-Retention Editing</div>
+            <p class="service-desc">Strategic editing focused on keeping viewers engaged from first frame to last. We
+              use proven retention techniques including dynamic pacing, visual variety, and strategic cuts.</p>
+          </div>
+        </div>
+
+        <div class="service-item reveal delay-1">
+          <div class="service-item-content">
+            <div class="service-title">Hook Structuring</div>
+            <p class="service-desc">Every video starts with a compelling hook designed to stop the scroll. We craft
+              attention-grabbing openings that immediately communicate value and create curiosity.</p>
+          </div>
+        </div>
+
+        <div class="service-item reveal delay-2">
+          <div class="service-item-content">
+            <div class="service-title">Motion Captions &amp; Graphics</div>
+            <p class="service-desc">Professional motion graphics, animated text overlays, and synchronized captions that
+              enhance your message and ensure accessibility across all viewing contexts.</p>
+          </div>
+        </div>
+
+        <div class="service-item reveal delay-2">
+          <div class="service-item-content">
+            <div class="service-title">Platform Optimization</div>
+            <p class="service-desc">Content tailored specifically for YouTube Shorts, Instagram Reels, and TikTok —
+              correct aspect ratios, audio levels, metadata, and platform-specific best practices.</p>
+          </div>
+        </div>
+
+        <div class="service-item reveal delay-3">
+          <div class="service-item-content">
+            <div class="service-title">Content Strategy Consultation</div>
+            <p class="service-desc">Beyond editing, we provide strategic guidance on which content to repurpose, optimal
+              posting schedules, and how to maximize the impact of your short-form content.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PROCESS
+  ══════════════════════════════════════════ -->
+  <section id="process">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal">Our Approach</h2>
+        <p class="section-sub reveal delay-1">
+          A proven three-step system that consistently delivers high-performing short-form content.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card reveal">
+          <div class="process-num">01</div>
+          <div class="process-step-label">Step One</div>
+          <div class="process-title">Content Analysis</div>
+          <p class="process-desc">We identify high-impact moments within your episodes, analyzing audience retention
+            patterns, emotional peaks, and viral potential to select the best content for repurposing.</p>
+        </div>
+
+        <div class="process-card reveal delay-1">
+          <div class="process-num">02</div>
+          <div class="process-step-label">Step Two</div>
+          <div class="process-title">Strategic Editing</div>
+          <p class="process-desc">We craft short-form videos structured for retention and engagement, using proven
+            editing techniques, compelling hooks, and platform-specific best practices.</p>
+        </div>
+
+        <div class="process-card reveal delay-2">
+          <div class="process-num">03</div>
+          <div class="process-step-label">Step Three</div>
+          <div class="process-title">Platform-Ready Delivery</div>
+          <p class="process-desc">Optimized formatting for YouTube Shorts, Instagram Reels, and TikTok. Each video is
+            delivered with correct aspect ratios, captions, and metadata for maximum reach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ABOUT  — text left, user's workspace image right
+  ══════════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-inner">
+
+        <!-- Text content — left -->
+        <div class="about-content reveal">
+          <h2 class="about-title">About Ruqfa Marketing</h2>
+          <p class="about-text">
+            Ruqfa Marketing is a growth-focused video editing agency built to help
+            podcasters scale their audience through strategic content transformation.
+          </p>
+          <p class="about-text">
+            We focus on clarity, retention, and platform-native formatting to ensure
+            every piece of content we produce drives measurable results.
+          </p>
+          <p class="about-text">
+            Our team combines technical editing expertise with a deep understanding of
+            social media algorithms to ensure every clip is built to perform — not just look good.
+          </p>
+
+          <ul class="about-list">
+            <li><span class="check">✓</span> Studio-quality editing on every deliverable</li>
+            <li><span class="check">✓</span> Deep knowledge of platform-specific best practices</li>
+            <li><span class="check">✓</span> Strategic approach to content selection and repurposing</li>
+            <li><span class="check">✓</span> Fast turnaround — most projects within 48 hours</li>
+            <li><span class="check">✓</span> Dedicated account manager for every client</li>
+          </ul>
+
+          <a href="#" class="btn btn-green" data-open-modal>Book a Strategy Call</a>
+        </div>
+
+        <!-- User's workspace image — right -->
+        <div class="about-image reveal delay-2">
+          <img src="images/about-workspace.jpg" alt="Ruqfa Marketing studio — professional video editing workspace"
+            onerror="this.parentElement.style.background='linear-gradient(135deg,#f0fdf4,#d1fae5)'; this.style.display='none';" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════════════ -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal">What Our Clients Say</h2>
+        <p class="section-sub reveal delay-1">
+          Real results from podcasters who trusted Ruqfa Marketing with their content.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Ruqfa Marketing transformed our podcast strategy entirely. Our social media reach
+            increased by 400% in just three months. The quality and strategic thinking behind
+            each clip is unlike anything we've seen from other agencies."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#065f46">SC</div>
+            <div>
+              <div class="author-name">Sarah Chen</div>
+              <div class="author-role">Host, Tech Talk Daily</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-1">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Working with Ruqfa has been game-changing. They understand not just editing, but
+            strategy. Every piece of content they deliver is designed to grow the audience —
+            and it shows in the numbers."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#1d4ed8">MR</div>
+            <div>
+              <div class="author-name">Michael Rodriguez</div>
+              <div class="author-role">Founder, Business Growth Show</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-2">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "The professionalism and strategic approach from Ruqfa is exceptional. They distill
+            our long conversations into clips that resonate. Our listeners now discover us
+            through short-form content."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#7c3aed">EW</div>
+            <div>
+              <div class="author-name">Emily Watson</div>
+              <div class="author-role">Host, Mindful Living Podcast</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CTA BANNER
+  ══════════════════════════════════════════ -->
+  <section id="contact-section">
+    <div id="cta-banner">
+      <div class="cta-banner-inner">
+        <h2 class="cta-banner-title reveal">Ready To Elevate Your Podcast Content?</h2>
+        <p class="cta-banner-sub reveal delay-1">
+          Let's discuss how we can help you grow your audience through strategic
+          short-form content. First strategy call is completely free.
+        </p>
+        <div class="cta-banner-actions reveal delay-2">
+          <a href="#" class="btn btn-white" data-open-modal>Book a Strategy Call</a>
+          <a href="mailto:ruqfamarketing@.com" class="btn btn-outline-white">ruqfamarketing@.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Ruqfa Marketing"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="footer-logo-fallback" style="display:none;">
+              <div class="footer-logo-icon">▶</div>
+              Ruqfa Marketing
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            Transforming long-form podcast episodes into strategic short-form content
+            that grows your audience and expands your reach.
+          </p>
+          <div class="footer-social">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">in</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-btn" title="Twitter">𝕏</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" title="Instagram">ig</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links">
+            <li><a href="mailto:ruqfamarketing@.com">ruqfamarketing@.com</a></li>
+            <li><a href="#" data-open-modal>Book a Strategy Call</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer-copy">© 2025 Ruqfa Marketing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT MODAL
+  ══════════════════════════════════════════ -->
+  <div id="contactModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+      <h2 class="modal-title" id="modalTitle">Book a Strategy Call</h2>
+      <p class="modal-sub">Tell us about your podcast and we'll reach out within 24 hours to schedule your free call.
+      </p>
+
+      <form id="contactForm" novalidate>
+        <div class="form-group" id="groupName">
+          <label class="form-label" for="fieldName">Name *</label>
+          <input class="form-input" type="text" id="fieldName" name="name" placeholder="Your full name"
+            autocomplete="name" />
+          <span class="form-error">Name is required.</span>
+        </div>
+        <div class="form-group" id="groupMobile">
+          <label class="form-label" for="fieldMobile">Mobile Number *</label>
+          <input class="form-input" type="tel" id="fieldMobile" name="mobile" placeholder="+1 234 567 8900"
+            autocomplete="tel" />
+          <span class="form-error">Enter a valid phone number.</span>
+        </div>
+        <div class="form-group" id="groupEmail">
+          <label class="form-label" for="fieldEmail">Email *</label>
+          <input class="form-input" type="email" id="fieldEmail" name="email" placeholder="your@email.com"
+            autocomplete="email" />
+          <span class="form-error">Enter a valid email address.</span>
+        </div>
+        <div class="form-group" id="groupProblem">
+          <label class="form-label" for="fieldProblem">Tell us about your podcast *</label>
+          <textarea class="form-input" id="fieldProblem" name="problem"
+            placeholder="Describe your podcast, current challenges, and goals..." rows="4"></textarea>
+          <span class="form-error">Please provide at least 10 characters.</span>
+        </div>
+        <button type="submit" class="btn-submit" id="submitBtn">
+          <div class="spinner" aria-hidden="true"></div>
+          <span class="btn-label">Send Message</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast-container" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>

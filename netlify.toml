@@ -1,0 +1,5 @@
+# Netlify config — Ruqfa Marketing site + contact form → Google Sheets
+
+[build]
+  publish = "frontend"
+  functions = "netlify/functions"

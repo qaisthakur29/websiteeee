@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Env and secrets (never commit credentials)
+.env
+*.env
+!*.env.example
+**/website-488003*.json
+
+# OS
+.DS_Store
+Thumbs.db
