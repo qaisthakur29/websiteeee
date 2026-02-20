@@ -10,7 +10,7 @@
   // script.google.com se deploy karke URL yahan paste karo
   // Example: 'https://script.google.com/macros/s/AKfycbw.../exec'
   // ══════════════════════════════════════════════════════════════
-  const CONTACT_API = 'https://script.google.com/macros/s/AKfycbxcLzft5n6zNnTl2qEHHbNyVmNSxFicJ5ii1ikFfKXHIzyzYBT9OGRnuaUY7pSAn5nA/exec';
+  const CONTACT_API = 'https://script.google.com/macros/s/AKfycbzf6r8ZP_aqRkOF37QtIopDe-dXqMKkkLCofvRXKfqGLFlbFf4wjTPxiAk8zYrWWPGQ/exec';
 
   /* ── Navbar scroll ────────────────────────────────────────── */
   const navbar = document.getElementById('navbar');
