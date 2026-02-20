@@ -1,11 +1,11 @@
-# Netlify config — Ruqfa Marketing (static site)
-# Form data Google Apps Script se handle hota hai, no serverless functions needed
+# Netlify config - Ruqfa Marketing site + contact form - Google Sheets
 
 [build]
   publish = "frontend"
+  # functions = "netlify/functions"  # Commented out - using Google Apps Script instead
 
-# SPA-style routing (optional, for single page)
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[build.environment]
+  SECRETS_SCAN_OMIT_KEYS = "SHEET_NAME,SPREADSHEET_ID"
+
+# [[plugins]]
+#   package = "@netlify/plugin-functions-install-core"
